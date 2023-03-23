@@ -1,0 +1,233 @@
+@import "color";
+
+.home{
+    width :100%;
+    height:100vh;
+    background-color:$second;
+    border-radius: 0 0 200px 0;
+    
+ 
+   
+    
+    >main{
+        position: absolute;
+        display:flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width :100%;
+        height: 100%;
+        padding: 2rem;
+        justify-content: center;
+
+
+
+    >h1{
+        font:400 7rem "$text1";
+        color:$first;
+        
+    }
+    >p{
+        font:900 1.5rem "$text2";
+        color:$first;
+         }
+    }
+
+    &::before{
+        content: "";
+        position:absolute;
+        height: 100%;
+        width:100%;
+        background: no-repeat center/auto url("../assets/img1.png");
+        border-radius: 0  0 200px 0;
+        
+
+    }
+
+}
+.home2{
+    height: 100%;
+    width: 100%;
+    background-color:rgb(0,0,83);
+    align-items: cneter;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+    
+    border-radius: 0 200px 0 200px;
+    
+    >.img2{
+        width: 40%;
+        height: 40%;
+        animation: imgup 0.8s linear infinite alternate;
+       
+    }
+
+    >div{
+
+        width: 40%;
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        padding:15px;
+        margin:10px;
+         
+        >p{
+            color:$first;
+            letter-spacing: 3px;
+            word-spacing:5px;
+            font:100 1.5rem $text2;
+            &:hover{
+                text-shadow: 1px 1px 4px rgb(4, 255, 251) ;
+            }
+            
+        }
+
+    }
+    @keyframes imgup {
+        to{
+           transform: translateX(-10px);
+           
+        }
+        
+    }
+
+}
+.home3{
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: $second;
+    border-radius: 200px 0;
+
+    >div{
+        width: 40%;
+        margin: 10px;
+        align-items: center;
+        justify-content: center;
+
+        >h1{
+            color:$first;
+            font:500 3rem $text1;
+            padding-bottom: 30px;
+            letter-spacing: 2px;
+            word-spacing: 3px;
+
+           
+        }
+        >p{
+            color: $first;
+            font: 100 1rem $text2;
+            padding: 10px;
+            letter-spacing: 1px;
+            word-spacing: 3px;
+            &:hover{
+                text-shadow: 1px 1px 4px rgb(4, 255, 251) ;
+            }
+            
+  
+        }
+
+    }
+   >.user{
+    width: 20%;
+    height: auto;
+    
+    >img{
+        width: 100%;
+        height: auto;
+        
+        &:hover{
+            transform:scale(1.02);
+        }
+    
+    }
+
+    >h2{
+        font: 100 1.5rem $text1;
+        color:$first;
+        text-align: center;
+        padding:1px;
+    }
+    >P{
+        text-align: center;
+    }
+   }
+    
+}
+
+.home4{
+    height:100vh;
+    width:100%;
+    background-color: rgb(0,0,83);
+    border-radius: 0 200px 0 0;
+    display: flex;
+    padding: 30vh 0 ;
+
+    >div{
+        width:80%;
+        height:50vh;
+        background-color: $second;
+        border-radius: 0 100px 100px 0;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+
+        >h1{
+            color: $first;
+            text-transform: uppercase;
+            width: 130px;
+            border-bottom: 2px solid $first;
+            padding: 0.5 rem;
+    
+        }
+        >article{
+            display: flex;
+            margin:2rem 0 ;
+            flex-wrap:wrap;
+            justify-content: cneter;
+            >div{
+                animation: swingicon 0.5s linear infinite alternate;
+                margin:1rem;
+                height:8rem;
+                width: 8rem;
+                background-color: $first;
+                border-radius: 50%;
+                display: flex;
+                flex-direction:column;
+                justify-content: center;
+                align-items: center;
+                color:$dark;
+                cursor:pointer;
+                transition: all 0.5s;
+                &:hover{
+                    filter:invert(1);
+                }
+                svg{
+                    font-size: 3rem;
+                }
+                p{
+                    font:100 1rem $text2;
+                }
+                
+
+            }
+            @keyframes swingicon {
+                to{
+                    transform: translateY(-10px);
+                }
+                
+            }
+
+        }
+    }
+    
+
+   
+
+}
