@@ -7,7 +7,7 @@ const Header =() => {
   return (
     <nav>
         <h1>
-            TechGO.
+            <HashLink to={"/#home"}>TechGO.</HashLink>
         </h1>
         <main>
             <HashLink to={"/#home"}>Home</HashLink>

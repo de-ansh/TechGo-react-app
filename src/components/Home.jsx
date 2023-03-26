@@ -5,7 +5,8 @@ import img3 from '../assets/img3.png'
 import{AiFillGoogleCircle,
   AiFillAmazonCircle,
   AiFillYoutube,
-  AiOutlineInstagram}from "react-icons/ai"
+  AiOutlineInstagram}
+from "react-icons/ai"
 
 const Home = () =>{
   return (
